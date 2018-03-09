@@ -66,6 +66,12 @@ public class PictureTester
     temple.mirrorTemple();
     temple.explore();
   }
+
+  public static void testCopy()
+  {
+    Picture seagull = new Picture("seagull.jpg");
+    seagull.copy(seagull, 0, 0);
+  }
   
   /** Method to test the collage method */
   public static void testCollage()
@@ -148,13 +154,13 @@ public class PictureTester
     //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
-    testMirrorTemple();
-    testMirrorArms();
-    testMirrorGull();
+    //testMirrorTemple();
+    //testMirrorArms();
+    //testMirrorGull();
     //testMirrorDiagonal();
     //testMirrorVerticalRightToLeft();
     //testCollage();
-    //testCopy();
+    testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
